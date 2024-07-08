@@ -6,8 +6,10 @@ numpad.addEventListener('click', (numberClick) => {
         if (num1Entered == false)
             num1Entered = true;
         else if (num1Entered == true && operatorPressed != null)
+         {   
+            updateScreen(" ");
             num2Entered = true;
-
+         }
         updateScreen(toUpdate);
     }
 });
@@ -119,11 +121,11 @@ function evaluate() {
             result = num1 - num2;
             break;
 
-        case 'x':
+        case '×':
             result = num1 * num2;
             break;
 
-        case '/':
+        case '÷':
             if (num2 == 0) {
                 dialog("Divion by Zero is Not Allowed");
                 return null;
