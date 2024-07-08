@@ -11,6 +11,7 @@ operators.addEventListener('click', (operatorClick) => {
     if (operatorClick.target.classList.contains('opButton')) {
         let toUpdate = operatorClick.target.textContent;
         toUpdate = ' ' + toUpdate + ' ';
+        operatorPressed = toUpdate;
         updateScreen(toUpdate);
     }
 });
@@ -39,6 +40,10 @@ topRowButton.addEventListener('click', (buttonPressed) => {
         case 'clear':
             clearScreen();
             break;
+
+        case 'equals':
+            evaluate();
+            break;
     }
 });
 
@@ -47,4 +52,39 @@ function clearScreen() {
     document.querySelector(".screen").textContent = ' ';
 }
 
+function evaluate() {
+    let screen = document.querySelector(".screen");
+    let expression = screen.textContent;
+    expression = expression.trim();
+
+    let [num1, num2] = expression.split(operatorPressed);
+
+    num1 = num1.trim();
+    num1 = parseInt(num1);
+    num2 = num2.trim();
+    num2 = parseInt(num2);
+
+    const operator = operatorPressed.trim();
+    let result;
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+
+        case '-':
+            result = num1 - num2;
+            break;
+
+        case 'x':
+            result = num1 * num2;
+            break;
+
+        case '/':
+            result = num1 / num2;
+            break;
+    }
+    screen.textContent = result;
+}
+
+let operatorPressed = null;
 clearScreen();
