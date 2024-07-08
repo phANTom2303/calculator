@@ -9,7 +9,8 @@ numpad.addEventListener('click', (numberClick) => {
 let operators = document.querySelector(".operators");
 operators.addEventListener('click', (operatorClick) => {
     if (operatorClick.target.classList.contains('opButton')) {
-        const toUpdate = operatorClick.target.textContent;
+        let toUpdate = operatorClick.target.textContent;
+        toUpdate = ' ' + toUpdate + ' ';
         updateScreen(toUpdate);
     }
 });
@@ -33,10 +34,17 @@ topRowButton.addEventListener('click', (buttonPressed) => {
     switch (buttonPressed.target.id) {
         case 'backspace':
             backSpace();
-            console.log("backspace pressed");
+            break;
+
+        case 'clear':
+            clearScreen();
             break;
     }
 });
 
+function clearScreen() {
 
-document.querySelector(".screen").textContent = ' ';
+    document.querySelector(".screen").textContent = ' ';
+}
+
+clearScreen();
