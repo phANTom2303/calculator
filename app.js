@@ -162,3 +162,5 @@ let operatorPressed = null;
 let num1Entered = false;
 let num2Entered = false;
 clearScreen();
+
+document.querySelector("#backspace").textContent = "<";

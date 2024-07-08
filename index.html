@@ -13,40 +13,47 @@
         <div class="calculator">
 
             <div class="screen-grid">
-                <div class="old-expression"></div>
-                <div class="screen"></div>
-                <div class="dialog-box"></div>
+                <div>
+                    <div class="old-expression"> Prev Box</div>
+                </div>
+                <div>
+                    <div class="screen"> Current Box</div>
+                </div>
+                <div>
+                    <div class="dialog-box"> Note Box</div>
+                </div>
             </div>
 
             <div class="controls">
 
                 <div class="top-row">
-                    <button id="backspace"><</button>
-                    <button id="clear">C</button>
-                    <button id="equals"> = </button>
+                    <button class="spacer">C</button>
+                    <button id="clear" class="realButton">C</button>
+                    <button id="backspace" class="realButton"></button>
+                    <button id="equals" class="realButton"> = </button>
                 </div>
 
                 <div class="math-buttons">
                     <div class="numpad">
-                        <button id="num1" class="numButton">7</button>
-                        <button id="num1" class="numButton">8</button>
-                        <button id="num1" class="numButton">9</button>
-                        <button id="num1" class="numButton">4</button>
-                        <button id="num1" class="numButton">5</button>
-                        <button id="num1" class="numButton">6</button>
-                        <button id="num1" class="numButton">1</button>
-                        <button id="num1" class="numButton">2</button>
-                        <button id="num1" class="numButton">3</button>
+                        <button id="num1" class="numButton realButton">7</button>
+                        <button id="num1" class="numButton realButton">8</button>
+                        <button id="num1" class="numButton realButton">9</button>
+                        <button id="num1" class="numButton realButton">4</button>
+                        <button id="num1" class="numButton realButton">5</button>
+                        <button id="num1" class="numButton realButton">6</button>
+                        <button id="num1" class="numButton realButton">1</button>
+                        <button id="num1" class="numButton realButton">2</button>
+                        <button id="num1" class="numButton realButton">3</button>
                         <button id="num1" class="numButton spacer">.</button>
-                        <button id="num1" class="numButton">0</button>
+                        <button id="num1" class="numButton realButton">0</button>
                         <button id="num1" class="numButton spacer">.</button>
                     </div>
 
                     <div class="operators">
-                        <button class="opButton" id="add">+</button>
-                        <button class="opButton" id="subtract">-</button>
-                        <button class="opButton" id="multiply">x</button>
-                        <button class="opButton" id="divide">/</button>
+                        <button class="opButton realButton" id="add">+</button>
+                        <button class="opButton realButton" id="subtract">-</button>
+                        <button class="opButton realButton" id="multiply">x</button>
+                        <button class="opButton realButton" id="divide">/</button>
                     </div>
                 </div>
             </div>
