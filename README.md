@@ -1,2 +1,3 @@
 # calculator
-A simple calculator app for javascript, html, css practice.
+A simple calculator app for javascript practice.
+
