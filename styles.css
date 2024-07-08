@@ -1,3 +1,6 @@
+body {
+    background-color: beige;
+}
 .all-content {
     display: flex;
     justify-content: center;
@@ -9,17 +12,18 @@
     display: flex;
     flex-direction: column;
     margin: 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
+    background-color: #03002e;
 }
 
 .screen-grid {
     width: 275px;
     height: 175px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
     margin: 10px;
-
+    background-color: #4c664b;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,6 +54,8 @@
 
 .top-row * {
     flex-grow: 1;
+    background-color: #4f1041;
+    color: white;
 }
 
 .math-buttons {
@@ -62,15 +68,25 @@
     grid-template-columns: auto auto auto;
 }
 
+.numpad * {
+    background-color: #131317;
+    color: white;
+}
+
+
 .operators {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
+.operators * {
+    background-color: black;
+    color: white;
+}
 button {
     padding: 15px 10px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 5px;
     border-radius: 5px;
 }
