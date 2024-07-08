@@ -1,6 +1,6 @@
 let numpad = document.querySelector(".numpad");
 numpad.addEventListener('click', (numberClick) => {
-    if (numberClick.target.classList.contains('numButton')) {
+    if (numberClick.target.classList.contains('realButton')) {
         const toUpdate = numberClick.target.textContent;
 
         if (num1Entered == false)
