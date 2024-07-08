@@ -48,6 +48,10 @@ button {
     border-radius: 5px;
 }
 
+.spacer {
+    opacity: 0;
+}
+
 button:hover{
     opacity: 60%;
 }
