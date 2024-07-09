@@ -5,7 +5,7 @@ numpad.addEventListener('click', (numberClick) => {
 
         if (num1Entered == false)
             num1Entered = true;
-        else if (num1Entered == true && operatorPressed != null)
+        else if (num1Entered == true && operatorPressed != null && num2Entered == false)
          {   
             updateScreen(" ");
             num2Entered = true;
