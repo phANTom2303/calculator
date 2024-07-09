@@ -166,3 +166,4 @@ let num2Entered = false;
 clearScreen();
 
 document.querySelector("#backspace").textContent = "<";
+document.querySelector(".old-expression").textContent = "Calculator";
